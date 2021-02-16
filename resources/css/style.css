@@ -2,7 +2,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #404040;
 }
 
@@ -21,8 +21,25 @@ html {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.bigpic {
+    width: 100%;
+    height: auto;
 }
 
 /* Header */
@@ -75,7 +92,7 @@ nav a {
     background-color: lightgrey;
 }
 
-.bigpic {
+.banner-pic {
     width: 60%;
     padding: 32px 24px;
 }
@@ -91,7 +108,7 @@ nav a {
 }
 
 .cta-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 36px 0px;
     font-weight: 500;
 }
@@ -101,5 +118,66 @@ button {
     background-color: #404040;
     color: white;
     font-size: 1.5rem;
+    width: 95%;
+}
+
+/* Info Section */
+
+.info {
     width: 100%;
+    display: flex;
+}
+
+.info-main {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.triple-info {
+    width: 40%;
+    margin: auto;
+    padding: 16px 0;
+}
+
+.triple-info-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.tiny-square-pic {
+    height: auto;
+    width: 35%;
+    padding: 16px;
+}
+
+.triple-info-text {
+    width: 65%;
+    margin: auto;
+    padding: 16px;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.credit {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 24px;
+}
+
+.details {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.triple-info-text a {
+    color: cornflowerblue;
+    font-size: 1.5rem;
+}
+
+.highlight {
+    background-color: lightgrey;
 }
