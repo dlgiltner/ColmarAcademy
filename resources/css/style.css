@@ -159,18 +159,21 @@ button {
 .quote {
     font-size: 1.5rem;
     font-weight: 500;
+    color: #606060;
 }
 
 .credit {
     font-size: 1rem;
     font-weight: 600;
     padding-top: 24px;
+    color: #606060;
 }
 
 .details {
     font-size: 1.5rem;
     font-weight: 500;
     padding: 8px 0;
+    color: #606060;
 }
 
 .triple-info-text a {
@@ -180,4 +183,47 @@ button {
 
 .highlight {
     background-color: lightgrey;
+}
+
+/* Start Section */
+
+.start-container {
+    background-color: lightgrey;
+}
+
+.start-title {
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+}
+
+.start-tiles-container {
+    margin: 0 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.start-tile {
+    flex-grow: 0;
+    flex-basis: 32%;
+    margin-bottom: 2%;
+    max-width: 532px;
+}
+
+.tile-image {
+    height: auto;
+    width: 100%;
+}
+
+.tile-text {
+    padding: 16px 16px 24px 16px;
+    background-color: white;
+    min-height: 163px;
+}
+
+.courses {
+    padding-top: 8px;
+    font-size: 1.25rem;
+    color: #606060;
 }
