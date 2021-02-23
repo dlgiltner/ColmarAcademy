@@ -1,9 +1,9 @@
 /* Universal Styles */
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 18px;
-    color: #404040;
+    color: #454545;
     overflow-x: hidden;
 }
 
@@ -67,7 +67,7 @@ header .content {
 }
 
 .bold {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 header nav ul {
@@ -109,16 +109,16 @@ nav a {
 }
 
 .cta-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 36px 0px;
     font-weight: 500;
 }
 
 button {
-    padding: 8px;
-    background-color: #404040;
+    padding: 12px;
+    background-color: #454545;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 95%;
 }
 
@@ -158,7 +158,7 @@ button {
 }
 
 .quote {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #606060;
 }
@@ -171,15 +171,15 @@ button {
 }
 
 .details {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 400;
     padding: 8px 0;
     color: #606060;
 }
 
 .triple-info-text a {
     color: cornflowerblue;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .highlight {
@@ -224,7 +224,8 @@ button {
 }
 
 .courses {
-    padding-top: 8px;
+    padding-top: 12px;
+    padding-bottom: 4px;
     font-size: 1.25rem;
     color: #606060;
 }
