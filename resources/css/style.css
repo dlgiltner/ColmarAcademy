@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     font-size: 18px;
     color: #454545;
     overflow-x: hidden;
@@ -24,6 +24,7 @@ html {
 h1 {
     font-size: 3.5rem;
     font-weight: 800;
+    color: #303050;
 }
 
 h2 {
@@ -31,11 +32,13 @@ h2 {
     font-weight: 700;
     padding-top: 32px;
     padding-bottom: 24px;
+    color: #303050;
 }
 
 h3 {
     font-size: 2rem;
     font-weight: 600;
+    color: #303050;
 }
 
 .bigpic {
@@ -85,6 +88,32 @@ nav a {
     color: black;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .logo {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
 /* Banner Section */
 
 .banner {
@@ -116,10 +145,37 @@ nav a {
 
 button {
     padding: 12px;
-    background-color: #454545;
+    background-color: #303050;
     color: white;
     font-size: 1.4rem;
     width: 95%;
+}
+
+@media only screen and (max-width: 760px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-pic {
+        width: 100%;
+        padding: 0 0 32px 0;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .cta-items {
+        width: 100%;
+    }
+
+    .cta-text {
+        padding: 32px auto 24px 16px;
+    }
+
+    button {
+        margin-bottom: 32px;
+    }
 }
 
 /* Info Section */
@@ -157,6 +213,10 @@ button {
     padding: 16px;
 }
 
+.horizontal-pic {
+    display: none;
+}
+
 .quote {
     font-size: 1.4rem;
     font-weight: 500;
@@ -184,6 +244,41 @@ button {
 
 .highlight {
     background-color: lightgrey;
+}
+
+@media only screen and (max-width: 760px) {
+    .info-main {
+        display: none;
+    }
+
+    .triple-info {
+        width: 100%;
+        padding: 16px 16px 32px 16px;
+    }
+
+    .triple-info-section {
+        flex-direction: column;
+    }
+
+    .tiny-square-pic {
+        display: none;
+    }
+
+    .horizontal-pic {
+        display: flex;
+        height: auto;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .triple-info-text {
+        width: 100%;
+        padding-left: 32px;
+    }
+
+    .highlight {
+        background-color: white;
+    }
 }
 
 /* Start Section */
@@ -230,6 +325,38 @@ button {
     color: #606060;
 }
 
+.start-tiles-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .start-tiles-container {
+        display: none;
+    }
+
+    .start-container {
+        background-color: white;
+        padding-bottom: 32px;
+    }
+
+    .start-title {
+        padding-bottom: 16px;
+        border-top: 1px solid #404040;
+    }
+    
+    .start-tiles-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .start-tile-mobile {
+        background-color: lightgrey;
+        margin: 8px 16px;
+        padding: 24px;
+    }
+
+}
+
 /* Thesis Section */
 
 .thesis-title {
@@ -269,6 +396,23 @@ video {
     padding: 16px;
 }
 
+@media only screen and (max-width: 760px) {
+    .thesis-title {
+        padding: 16px;
+        border-top: 1px solid #404040;
+    }
+
+    .thesis-info, .thesis-text {
+        display: none;
+    }
+
+    .thesis-video {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -293,11 +437,17 @@ footer nav ul {
 
 footer nav li {
     float: left;
-    padding-left; 16px;
+    padding-left: 16px;
     text-decoration: none;
     list-style: none;
 }
 
 footer nav a {
     color: #606060;
+}
+
+@media only screen and (max-width: 760px) {
+    footer nav {
+        display: none;
+    }
 }
