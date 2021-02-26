@@ -1,10 +1,17 @@
 /* Universal Styles */
 
+/* debug ghost items causing white bar on right of site 
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+*/
+
 html {
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     font-size: 18px;
     color: #454545;
-    overflow-x: hidden;
 }
 
 .main-content {
@@ -151,6 +158,14 @@ button {
     width: 95%;
 }
 
+button:hover {
+    background-color: #505070;
+}
+
+button:active {
+    background-color: #202030;
+}
+
 @media only screen and (max-width: 760px) {
     .banner {
         flex-direction: column;
@@ -162,15 +177,20 @@ button {
     }
 
     .cta {
-        width: 100%;
+        width: 95%;
+        padding-right: 0;
     }
 
     .cta-items {
         width: 100%;
     }
 
+    .cta-items > h1 {
+        font-size: 3rem;
+    }
+
     .cta-text {
-        padding: 32px auto 24px 16px;
+        padding: 32px 0 24px 16px;
     }
 
     button {
@@ -199,6 +219,10 @@ button {
 .triple-info-section {
     display: flex;
     flex-direction: row;
+}
+
+.triple-info-section:hover {
+    background-color: lightgrey;
 }
 
 .tiny-square-pic {
@@ -242,18 +266,14 @@ button {
     font-size: 1.4rem;
 }
 
-.highlight {
-    background-color: lightgrey;
-}
-
 @media only screen and (max-width: 760px) {
     .info-main {
         display: none;
     }
 
     .triple-info {
-        width: 100%;
-        padding: 16px 16px 32px 16px;
+        width: 90%;
+        padding: 16px 0 32px 0;
     }
 
     .triple-info-section {
@@ -268,16 +288,16 @@ button {
         display: flex;
         height: auto;
         width: 100%;
-        padding: 16px;
+        padding: 16px 0 16px 16px;
     }
 
     .triple-info-text {
         width: 100%;
-        padding-left: 32px;
+        padding: 16px 0 16px 32px;
     }
 
-    .highlight {
-        background-color: white;
+    .details {
+        padding: 8px 32px 8px 8px;
     }
 }
 
@@ -289,7 +309,7 @@ button {
 
 .start-title {
     width: 100%;
-    padding: 32px;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -390,6 +410,10 @@ video {
     flex-direction: row;
 }
 
+.thesis-section:hover {
+    background-color: lightgrey;
+}
+
 .thesis-info-text {
     width: 65%;
     margin: auto;
@@ -398,7 +422,7 @@ video {
 
 @media only screen and (max-width: 760px) {
     .thesis-title {
-        padding: 16px;
+        padding: 16px 0;
         border-top: 1px solid #404040;
     }
 
