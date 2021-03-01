@@ -12,6 +12,7 @@ html {
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     font-size: 18px;
     color: #454545;
+    box-sizing: border-box;
 }
 
 .main-content {
@@ -119,6 +120,11 @@ nav a {
         align-items: center;
         width: 100%;
     }
+
+    .mobile-nav ul li img {
+        height: 36px;
+        width: auto;
+    }
 }
 
 /* Banner Section */
@@ -126,7 +132,7 @@ nav a {
 .banner {
     width: 100%;
     display: flex;
-    background-color: lightgrey;
+    background-color: #d3d3e7;
 }
 
 .banner-pic {
@@ -160,6 +166,7 @@ button {
 
 button:hover {
     background-color: #505070;
+    cursor: pointer;
 }
 
 button:active {
@@ -222,7 +229,7 @@ button:active {
 }
 
 .triple-info-section:hover {
-    background-color: lightgrey;
+    background-color: #d3d3e7;
 }
 
 .tiny-square-pic {
@@ -233,7 +240,6 @@ button:active {
 
 .triple-info-text {
     width: 65%;
-    margin: auto;
     padding: 16px;
 }
 
@@ -272,7 +278,7 @@ button:active {
     }
 
     .triple-info {
-        width: 90%;
+        width: 100%;
         padding: 16px 0 32px 0;
     }
 
@@ -287,11 +293,12 @@ button:active {
     .horizontal-pic {
         display: flex;
         height: auto;
-        width: 100%;
+        width: auto;
         padding: 16px 0 16px 16px;
     }
 
     .triple-info-text {
+        box-sizing: border-box;
         width: 100%;
         padding: 16px 0 16px 32px;
     }
@@ -304,7 +311,7 @@ button:active {
 /* Start Section */
 
 .start-container {
-    background-color: lightgrey;
+    background-color: #d3d3e7;
 }
 
 .start-title {
@@ -361,7 +368,7 @@ button:active {
 
     .start-title {
         padding-bottom: 16px;
-        border-top: 1px solid #404040;
+        border-top: 1px solid #d3d3e7;
     }
     
     .start-tiles-mobile {
@@ -370,7 +377,7 @@ button:active {
     }
 
     .start-tile-mobile {
-        background-color: lightgrey;
+        background-color: #d3d3e7;
         margin: 8px 16px;
         padding: 24px;
     }
@@ -411,7 +418,7 @@ video {
 }
 
 .thesis-section:hover {
-    background-color: lightgrey;
+    background-color: #d3d3e7;
 }
 
 .thesis-info-text {
@@ -423,7 +430,7 @@ video {
 @media only screen and (max-width: 760px) {
     .thesis-title {
         padding: 16px 0;
-        border-top: 1px solid #404040;
+        border-top: 1px solid #d3d3e7;
     }
 
     .thesis-info, .thesis-text {
@@ -440,7 +447,7 @@ video {
 /* Footer */
 
 footer {
-    border-top: 1px solid #404040;
+    border-top: 1px solid #d3d3e7;
     display: flex;
     height: 64px;
     color: #606060;
@@ -471,6 +478,11 @@ footer nav a {
 }
 
 @media only screen and (max-width: 760px) {
+    footer {
+        height: auto;
+        border-top: none;
+    }
+
     footer nav {
         display: none;
     }
